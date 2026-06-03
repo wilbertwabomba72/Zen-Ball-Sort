@@ -4,7 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zen Ball Sort - Crystal Color Puzzle</title>
-  <meta name="description" content="Zen Ball Sort is a calm offline color sorting puzzle game with glossy crystal balls, frosted glass tubes, and relaxing logic challenges.">
+  <meta name="description" content="Zen Ball Sort is a calm offline color sorting puzzle game with glossy crystal balls, frosted glass tubes, and relaxing logic challenges. Technical support: 508923216@qq.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zen Ball Sort - Crystal Color Puzzle">
+  <meta property="og:description" content="A calm offline color sorting puzzle with glossy crystal balls, frosted glass tubes, and relaxing logic challenges.">
+  <meta property="og:image" content="https://zen-ball-sort.vercel.app/site-assets/zen-ball-sort-preview.jpg">
+  <meta property="og:url" content="https://zen-ball-sort.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zen Ball Sort - Crystal Color Puzzle">
+  <meta name="twitter:description" content="Sort glossy crystal balls in frosted glass tubes and enjoy a calm premium puzzle.">
+  <meta name="twitter:image" content="https://zen-ball-sort.vercel.app/site-assets/zen-ball-sort-preview.jpg">
   <style>
     :root {
       --ink: #20242d;
@@ -149,6 +158,45 @@
       line-height: 1.55;
     }
 
+    .support {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: rgba(255, 255, 255, 0.50);
+      box-shadow: 0 18px 42px rgba(63, 56, 45, 0.10);
+      backdrop-filter: blur(18px);
+    }
+
+    .support-icon {
+      width: 82px;
+      height: 82px;
+      border-radius: 22px;
+      box-shadow: 0 14px 32px rgba(45, 40, 34, 0.16);
+    }
+
+    .support h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      letter-spacing: -0.03em;
+    }
+
+    .support p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .support a {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
     footer {
       margin-top: 46px;
       color: var(--muted);
@@ -172,6 +220,10 @@
         grid-template-columns: 1fr;
       }
 
+      .support {
+        grid-template-columns: 1fr;
+      }
+
       .page {
         padding-top: 30px;
       }
@@ -191,7 +243,7 @@
         </div>
       </div>
       <div class="phone-card" aria-label="Zen Ball Sort gameplay preview">
-        <img src="AppStoreSubmission/Screenshots/iPhone_6_5/01_home_1242x2688.png" alt="Zen Ball Sort home screen">
+        <img src="site-assets/zen-ball-sort-preview.jpg" alt="Zen Ball Sort home screen">
       </div>
     </section>
 
@@ -210,8 +262,16 @@
       </article>
     </section>
 
+    <section class="support" aria-labelledby="support-title">
+      <img class="support-icon" src="site-assets/zen-ball-sort-icon.jpg" alt="Zen Ball Sort app icon">
+      <div>
+        <h2 id="support-title">Technical Support</h2>
+        <p>For gameplay questions, bug reports, or support requests, please contact the developer at <a href="mailto:508923216@qq.com">508923216@qq.com</a>.</p>
+      </div>
+    </section>
+
     <footer>
-      <p>Zen Ball Sort. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+      <p>Zen Ball Sort. All rights reserved. <a href="privacy.html">Privacy Policy</a> · <a href="mailto:508923216@qq.com">Support</a></p>
     </footer>
   </main>
 </body>
