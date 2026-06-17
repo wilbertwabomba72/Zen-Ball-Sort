@@ -8,10 +8,11 @@
   <style>
     :root {
       --ink: #20242d;
-      --muted: #6e675c;
+      --muted: #70695f;
       --ivory: #fbf1e3;
-      --glass: rgba(255, 255, 255, 0.56);
-      --line: rgba(255, 255, 255, 0.82);
+      --glass: rgba(255, 255, 255, 0.58);
+      --line: rgba(255, 255, 255, 0.84);
+      --shadow: rgba(54, 47, 36, 0.14);
     }
 
     * {
@@ -23,9 +24,9 @@
       font-family: Avenir, "Avenir Next", Helvetica, Arial, sans-serif;
       color: var(--ink);
       background:
-        radial-gradient(circle at 10% 10%, rgba(255, 177, 87, 0.32), transparent 28rem),
-        radial-gradient(circle at 92% 18%, rgba(86, 214, 230, 0.22), transparent 30rem),
-        radial-gradient(circle at 22% 92%, rgba(247, 173, 204, 0.26), transparent 32rem),
+        radial-gradient(circle at 10% 12%, rgba(255, 183, 103, 0.34), transparent 28rem),
+        radial-gradient(circle at 92% 18%, rgba(88, 216, 232, 0.23), transparent 30rem),
+        radial-gradient(circle at 22% 94%, rgba(249, 174, 207, 0.26), transparent 34rem),
         var(--ivory);
       min-height: 100vh;
     }
@@ -33,15 +34,15 @@
     main {
       width: min(920px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 46px 0;
+      padding: 44px 0;
     }
 
     article {
       padding: clamp(26px, 5vw, 58px);
       border: 1px solid var(--line);
-      border-radius: 36px;
+      border-radius: 38px;
       background: var(--glass);
-      box-shadow: 0 28px 80px rgba(58, 52, 42, 0.14);
+      box-shadow: 0 28px 80px var(--shadow);
       backdrop-filter: blur(18px);
     }
 
@@ -62,7 +63,7 @@
     li {
       color: var(--muted);
       font-size: 17px;
-      line-height: 1.65;
+      line-height: 1.68;
     }
 
     ul {
@@ -71,38 +72,52 @@
 
     a {
       color: var(--ink);
-      font-weight: 800;
+      font-weight: 900;
       text-decoration: none;
     }
 
     .date {
       margin-top: 0;
       color: var(--muted);
-      font-weight: 700;
+      font-weight: 800;
+    }
+
+    .back {
+      display: inline-flex;
+      margin-bottom: 18px;
+      padding: 12px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.42);
+      box-shadow: 0 12px 28px rgba(53, 47, 37, 0.08);
     }
   </style>
 </head>
 <body>
   <main>
+    <a class="back" href="index.html">Back to Zen Ball Sort</a>
     <article>
       <h1>Privacy Policy</h1>
-      <p class="date">Effective date: May 29, 2026</p>
+      <p class="date">Effective date: June 17, 2026</p>
 
-      <p>This Privacy Policy explains how Zen Ball Sort handles information when you use the game. Zen Ball Sort is a single-player puzzle game designed for offline play. We do not require you to create an account.</p>
+      <p>This Privacy Policy explains how Zen Ball Sort handles information when you use the game. Zen Ball Sort is a single-player color sorting puzzle game designed for offline play. We do not require you to create an account.</p>
 
-      <h2>Information We Do Not Collect Directly</h2>
-      <p>We do not directly ask you to provide your name, email address, phone number, contacts, photos, precise location, or payment information inside the game.</p>
+      <h2>Information We Do Not Ask You To Provide</h2>
+      <p>The game does not directly ask you to provide your name, email address, phone number, contacts, photos, precise location, or payment information.</p>
 
       <h2>Local Game Data</h2>
-      <p>The game stores progress, unlocked levels, star ratings, music settings, and sound settings locally on your device. This information is used only to provide gameplay features and is not intentionally sent to us by the game logic.</p>
+      <p>Zen Ball Sort stores gameplay progress, unlocked levels, star ratings, move counts, music settings, and sound settings locally on your device. This local data is used to provide gameplay features and is not intentionally sent to the developer by the core game logic.</p>
 
       <h2>Advertising and Third-Party SDKs</h2>
-      <p>The app may include third-party advertising, analytics, or security SDKs. These services may process technical information such as device identifiers, advertising identifiers, app activity, crash or diagnostic data, approximate region, and network information in order to provide ads, measure performance, prevent fraud, and keep the app stable.</p>
+      <p>The app may include third-party advertising, analytics, security, or fraud-prevention SDKs. These third-party services may process technical information such as device identifiers, advertising identifiers, app activity, crash or diagnostic data, approximate region, network information, and ad interaction data in order to provide ads, measure performance, prevent fraud, and keep the app stable.</p>
 
+      <p>These third-party providers handle information according to their own privacy policies and technical practices. The developer does not directly control how those third-party SDKs process data once it is handled by their services.</p>
+
+      <h2>App Tracking Transparency</h2>
       <p>When required by Apple policies, the app uses Apple's App Tracking Transparency prompt before tracking-related SDK initialization. If you deny tracking permission, advertising partners should not use the device advertising identifier for tracking across apps and websites.</p>
 
       <h2>Internet Access</h2>
-      <p>Core gameplay is designed to work offline. Internet access may be used by third-party SDKs for advertising, diagnostics, fraud prevention, or related service functionality.</p>
+      <p>Core gameplay is designed to work offline. Internet access may still be used by third-party SDKs for advertising, diagnostics, fraud prevention, attribution, or related service functionality.</p>
 
       <h2>Children's Privacy</h2>
       <p>Zen Ball Sort is not intended to knowingly collect personal information from children. If you believe a child has provided personal information through a third-party service used in the app, please contact the relevant service provider or email the developer at <a href="mailto:508923216@qq.com">508923216@qq.com</a>.</p>
@@ -115,15 +130,14 @@
         <li>You can reset or delete local progress by deleting the app from your device.</li>
         <li>You can manage tracking permission in iOS Settings.</li>
         <li>You can limit personalized advertising through iOS privacy settings where available.</li>
+        <li>You can turn music and sound effects on or off inside the game.</li>
       </ul>
 
-      <h2>Changes to This Policy</h2>
+      <h2>Changes To This Policy</h2>
       <p>We may update this Privacy Policy from time to time. Any updated version will be posted on this page with a revised effective date.</p>
 
       <h2>Contact</h2>
       <p>If you have questions about this Privacy Policy or need technical support, please contact the developer at <a href="mailto:508923216@qq.com">508923216@qq.com</a>.</p>
-
-      <p><a href="index.html">Back to Zen Ball Sort</a></p>
     </article>
   </main>
 </body>
